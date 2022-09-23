@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Paytone+One&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cdb04f631a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary p-0 border-bottom">
+    <div class="container">
+      <h1 class="mb-0 flex-grow-1"><a class="py-lg-0 py-2 me-0" href="./index.html">
+          <img src="./assets/images/logo.svg" alt="Art NFT">
+        </a></h1>
+      <i class="fa-solid fa-magnifying-glass fs-4 d-lg-none me-3"></i>
+      <button class="navbar-toggler text-center menuOpen p-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <i class="fa-solid fa-bars fs-4 d-flex "></i>
+
+      </button>
+
+      <button class="navbar-toggler text-center menuClose p-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <i class="fa-solid fa-xmark fs-4 d-flex"></i>
+
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-lg-end menu" id="navbarSupportedContent">
+        <form class="d-lg-flex d-none">
+
+          <input class="form-control me-3 ms-6 fs-7 bg-primary border-0 headerSearch p-0" type="search"
+            placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+
+          <button class="btn p-0 me-6 searchIcon" type="submit"><i class="fa-solid fa-magnifying-glass fs-4"></i></button>
+
+        </form>
+        <ul class="navbar-nav mb-3 mb-lg-0 text-center align-items-lg-center menuList ">
+          <li class="nav-item border-lg-left  ps-xl-6 pe-xl-6 ps-lg-4 pe-lg-4 ">
+            <a class="nav-link text-dark fw-bold fs-lg-7 fs-6 py-3 py-lg-5" href="#">探索</a>
+          </li>
+          <li class="nav-item border-lg-left ps-xl-6 pe-xl-6 ps-lg-4 pe-lg-4 value">
+            <a class="nav-link text-dark fw-bold fs-7 fs-6 py-3 py-lg-5" href="#">市值</a>
+          </li>
+
+          <li class="nav-item  ps-xl-6 pe-xl-6 ps-lg-4 pe-lg-4 wallet">
+            <a class="nav-link text-dark  d-none d-lg-block" href="#"><i class="fa-solid fa-wallet fs-4"></i></a>
+            <a class="nav-link text-dark fw-bold  fs-7 fs-6 py-3 d-lg-none" href="#">連結錢包</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <%- contents %>
+
+    <footer class="footer border-top">
+      <div class="container-fluid mt-1 border-top border-4 py-3">
+        <p class="text-noto fs-7 text-center mb-0">© ART NFT. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

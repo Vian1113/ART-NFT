@@ -1,0 +1,118 @@
+.headerSearch {
+    min-width: 220px;
+}
+
+
+.menu{
+    padding:0 12px;
+    background-color: $secondary;
+    @include large{
+        padding:0;
+        background-color: transparent;
+    }
+
+.btn-outline-dark:hover,
+.btn.searchIcon:hover{
+
+    background-color: transparent;
+    color:$danger !important;
+
+  
+}
+
+}
+
+.menuClose{
+    display:none;
+}
+
+
+.menuList {
+    
+
+    
+
+    .nav-item {
+
+        border-bottom: 1px solid;
+        
+        
+        
+        &:hover {
+
+            background-color:  $danger;
+            border: 1px solid $black;
+
+            .nav-link {
+                color: $secondary !important;
+            }
+        }
+
+      
+
+        
+
+        @include large {
+            border-bottom: none;
+            border-top:none;
+            border-left:1px solid;
+            
+            &:hover{
+               
+                border-top:none;
+                border-bottom:none;
+                border-right:none;
+                
+                background-color:transparent;
+                .nav-link{
+                    color:$danger !important;
+                    
+                }
+            }
+
+        
+
+        }
+
+
+    }
+
+    .value{
+        border-left:none;
+        border-bottom:1px solid;
+
+        @include large {
+            border-right:1px solid;
+            border-left:1px solid;
+            border-bottom:none;
+
+            &:hover{
+                border-right:1px solid;
+            }
+
+
+        }
+    }
+
+    .wallet{
+        border-bottom:1px solid;
+        border-left:none;
+        @include large {
+            border:none;
+            &:hover{
+                border-left:none;
+            }
+
+
+        }
+
+      
+    }
+
+
+
+
+
+
+
+}
